@@ -1,1 +1,68 @@
 /*Portfolio Style Sheet*/
+
+h1{
+    color:mintcream;
+}
+h2{
+    color: #14E1FC;
+}
+h3{
+    color:mintcream;
+}
+h4{
+    color: #14E1FC;
+}
+h5{
+    color:mintcream;
+}
+
+.navigation{
+    background-image: url("../images/Aurora\ Blur\ Stein\ Egil\ Liland.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.top-nav{
+
+}
+
+.bot-nav{
+    text-align: right;
+}
+
+.inline-block{
+    display:inline-block;
+    vertical-align: top;
+}
+
+.logo{
+
+}
+
+.body-left{
+    display:inline-block;
+    width:30%;
+    text-align: center;
+}
+
+.body-right{
+    display:inline-block;
+    float:right;
+    width:70%;
+    text-align: center;
+}
+
+.card{
+    background-color: lightslategray;
+    text-align: justify;
+}
+
+.card-pic{
+    width: 120px;
+    height: 120px;
+}
+
+.hero-pic{
+    width:800px;
+    height:450px;
+}
