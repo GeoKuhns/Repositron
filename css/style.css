@@ -1,7 +1,9 @@
 /*Portfolio Style Sheet*/
 
+/*desired fonts don't seem to work atm*/
 h1{
     color:mintcream;
+    font-family: "Expletus Sans","Arima Madurai","Spectral","Georgia",sans-serif;
 }
 h2{
     color: #14E1FC;
@@ -11,9 +13,16 @@ h3{
 }
 h4{
     color: #14E1FC;
+    font-family: "Kanit","K2D","Epilogue","Cambria",sans-serif;
 }
 h5{
     color:mintcream;
+}
+ul{
+    list-style: none;
+    display: flex;
+    margin:1%;
+   /*background-color: olive;*/
 }
 
 .navigation{
@@ -23,20 +32,29 @@ h5{
 }
 
 .top-nav{
-
+    width:73%;
+    padding:1%;
+    position:fixed;
 }
 
 .bot-nav{
     text-align: right;
 }
 
+.list-format{
+    width: 100px;
+}
+
 .inline-block{
-    display:inline-block;
-    vertical-align: top;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .logo{
-
+    width:13%;
+    margin:3%;
+    float: left;
+    margin-right: 10%;
 }
 
 .body-left{
@@ -46,7 +64,6 @@ h5{
 }
 
 .body-right{
-    display:inline-block;
     float:right;
     width:70%;
     text-align: center;
@@ -55,6 +72,9 @@ h5{
 .card{
     background-color: lightslategray;
     text-align: justify;
+    margin-left: 2%;
+    padding-left:2%;
+    padding-right:2%;
 }
 
 .card-pic{
@@ -65,4 +85,5 @@ h5{
 .hero-pic{
     width:800px;
     height:450px;
+    padding: 2%;
 }
