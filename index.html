@@ -6,15 +6,19 @@
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <link rel="icon" type="image/x-icon" href="images/placeholder-logo.jpg" alt="starry abyss">
     </head>
-    <body style="background-color: #1B1B29;">
-        <!--HEADER--><header class="navigation" class="top-nav">
-            <!--Name Etc.--><div class="inline-block">
-                <img src="images/placeholder-logo.jpg" class="logo" alt="Geo Portrait">
-                <h2 style="width: 250px; margin:5%">
+    <body id="bodyDisplay">
+        <!--HEADER-->
+        <header class="navigation" id="topNav">
+            <!--Name Etc.-->
+            <div class="inline-block">
+                <img src="images/placeholder-logo.jpg" id="logo" alt="Geo Portrait">
+                <h2 id="name">
                     Geoffrey Kuhns
                 </h2>
             </div>
-            <!--Links Etc.--><nav class="inline-block" style="margin-left: 40%">
+            <div id="nullCenterTop"></div>
+            <!--Links Etc.-->
+            <nav id="navButton">
                 <ul>
                     <li class="list-format"><a href=""><h5>Work</h5></a></li>
                     <li class="list-format"><a href=""><h5>About</h5></a></li>
@@ -23,43 +27,78 @@
                 </ul>
             </nav>
         </header>
-        <!--LEFT--><section class="body-left">
+        <!--Quote/Inspiration-->
+        <section id="bannerQuote">
             <h1>
                 Inspiring Quote that Informs Identity and Work
             </h1>
-            <div class="card">
-                <h3>Card Title</h3>
-                <p>
-                    Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
-                </p>
-                <img src="images/Negative Sun - Pixabay.jpeg" class="card-pic" alt="Sample 1">
-            </div>
-            <div class="card">
-                <h3>Card Title</h3>
-                <p>
-                    Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
-                </p>
-                <img src="images/Negative Sun - Pixabay.jpeg" class="card-pic" alt="Sample 2">
-            </div>
-            <div class="card">
-                <h3>Card Title</h3>
-                <p>
-                    Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
-                </p>
-                <img src="images/Negative Sun - Pixabay.jpeg" class="card-pic" alt="Sample 3">
-            </div>
         </section>
-        <!--RIGHT--><section class="body-right">
-            <img src="images/Space Violet - Frank Cone.jpeg" class="hero-pic" alt="Galaxy Hero">
-            <h4>
-                Picture Explanation
-            </h4>
-        </section>
-        <!--FOOTER--><footer class="navigation" class="bot-nav">
-            <!--Social Media--><nav class="inline-block" style="margin-left: 90%;">
-                <a href="https://www.linkedin.com/in/geoffrey-kuhns-46357425/"><img src="images/placeholder-logo.jpg" alt="Linked In"></a>
-                <img src="images/placeholder-logo.jpg" alt="other social media">
-             </nav>
-        </footer>
+        <!--Content: Main Body of-->
+        <section id="bodyMain">
+            <div id="nullLeft" class="bodyColumn">
+                <!--left gutter-->
+            </div>
+            <div id="detailColumn" class="bodyColumn">
+                <div class="card">
+                    <h3 class="cardTitle">Card Title</h3>
+                    <p class="cardDetails">
+                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                    </p>
+                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 1">
+                </div>
+                
+                <div class="card">
+                    <h3 class="cardTitle">Card Title</h3>
+                    <p class="cardDetails">
+                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                    </p>
+                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 2">
+                </div>
+                <div class="card">
+                    <h3 class="cardTitle">Card Title</h3>
+                    <p class="cardDetails">
+                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                    </p>
+                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 3">
+                </div>
+            </div>
+            <div id="nullCenter" class="bodyColumn">
+                <!--center "gutter"-->
+            </div>
+            <div id="heroSpace" class="bodyColumn">
+                <img src="images/Space Violet - Frank Cone.jpeg" id="heroPic" alt="Galaxy Hero">
+                <h4 id="heroText">
+                    Picture Explanation
+                </h4>
+                <div id="heroStatLeft">
+                    <img src="images/Pie Chart.png" class="statIcon" alt="Pie Chart">
+                    <h2>42%</h2>
+                    <p>
+                        Insightful Deduction
+                    </p>
+                </div>
+                <div id="heroStatGap">
+                    <!--StatGap-->
+                </div>
+                <div id="heroStatRight">
+                    <img src="images/Crosshair.png" class="statIcon" alt="Cross Hair">
+                    <h2>42%</h2>
+                    <p>
+                        Insightful Deduction
+                    </p>
+                </div>
+            </div>
+            <div id="nullRight" class="bodyColumn">
+                <!--right gutter-->
+            </div>
+        </section><!-- <<end of bodyMain-->
+        <!--FOOTER-->
+        <div class="navigation" id="botNav">
+            <!--Social Media-->
+            <nav class="inline-block">
+                <a href="https://www.linkedin.com/in/geoffrey-kuhns-46357425/"><img src="images/Favicon LinkedIn.png" class="socialIcon" alt="Linked In"></a>
+                <a href="https://www.facebook.com/geoffrey.kuhns"><img src="images/Favicon Facebook.png" class="socialIcon"  alt="Facebook"></a>a>
+            </nav>
+        </div>
     </body>
 </html>

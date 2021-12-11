@@ -1,29 +1,35 @@
 /*Portfolio Style Sheet*/
 
-/*desired fonts don't seem to work atm*/
+/*Style Tyle universal styling only*/
 h1{
     color:mintcream;
     font-family: "Expletus Sans","Arima Madurai","Spectral","Georgia",sans-serif;
+    font-size: 28px;
 }
 h2{
     color: #14E1FC;
     font-family: "Expletus Sans","Arima Madurai","Spectral","Georgia",sans-serif;
+    font-size: 26px;
 }
 h3{
     color:mintcream;
     font-family: "Expletus Sans","Arima Madurai","Spectral","Georgia",sans-serif;
+    font-size: 24px;
 }
 h4{
     color: #14E1FC;
     font-family: "Kanit","K2D","Epilogue","Cambria",sans-serif;
+    font-size: 24px;
 }
 h5{
     color:mintcream;
     font-family: "Kanit","K2D","Epilogue","Cambria",sans-serif;
+    font-size: 20px;
 }
 p{
     color:mintcream;
     font-family: "Kanit","K2D","Epilogue","Cambria",sans-serif;
+    font-size: 18px;
 }
 ul{
     list-style: none;
@@ -32,24 +38,43 @@ ul{
    /*background-color: olive;*/
 }
 
+*{
+    box-sizing: border-box;
+}/* ^^W3 says helps layout: includes padding and borders in element sizes for gridding*/
+
+/*Style Tyle universal styling ^^^^^^^^^^^^*/
+
+
+#bodyDisplay{
+    background-color: #1B1B29;
+
+    display: grid;
+    /*grid-template-rows:     8.33%       16.67%          66.67%      8.33%   ;*/
+    grid-template-rows:     .25fr        1fr             8fr         .25fr     ;
+    grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
+}
+
+#topNav{
+    width:100%;
+    height: 60px;
+    position:fixed;
+
+    grid-area: topNav;
+    display: grid;
+    grid-template-columns:  1fr     2fr     5fr             1fr         1fr         1fr         1fr       ;
+    grid-template-areas:    "logo   name    nullCenterTop   navButton   navButton   navButton   navButton";
+}
+
 .navigation{
     background-image: url("../images/Aurora\ Blur\ Stein\ Egil\ Liland.jpeg");
     background-size: cover;
     background-attachment: fixed;
-}
+}/*sets the header/footer picture and style*/
 
-.top-nav{
-    width:73%;
-    padding:1%;
-    position:fixed;
-}
-
-.bot-nav{
-    text-align: right;
-}
 
 .list-format{
     width: 100px;
+    margin-top: -20px;
 }
 
 .inline-block{
@@ -57,40 +82,197 @@ ul{
     vertical-align: middle;
 }
 
-.logo{
-    width:13%;
-    margin:3%;
+/*topNav grid area declarations*/
+#logo{
+    width:20%;
+    margin:2%;
     float: left;
     margin-right: 10%;
-}
 
-.body-left{
-    display:inline-block;
-    width:30%;
+    display: grid;
+    grid-area: logo;
+}
+#name{
+    width: 300px;
+    margin: 5%;
+    
+    grid-area: name;
+}
+#nullCenterTop{
+    grid-area: nullCenterTop;
+}
+#navButton{
+    grid-area: navButton;
+    padding: 1px;
+}
+/*topNav grid area declarations^^^^^^^^^^^^^*/
+
+/*all things bannerQuote*/
+#bannerQuote{
+    grid-area: bannerQuote;
     text-align: center;
+    padding-top: 2%;
 }
+/*all things bannerQuote^^^^^^^^^^^^^^^^^^^^*/
 
-.body-right{
-    float:right;
-    width:70%;
+
+/*bodyMain declarations*/
+#bodyMain{
+    width:100%;
     text-align: center;
+    
+    display: grid;
+    grid-area: bodyMain;
+    grid-column-gap: 0.5%;
+    grid-row-gap:    0.5%;
+
+    grid-template-columns:  1fr         4fr             1fr         5fr         1fr       ;
+    grid-template-areas:    "nullLeft   detailColumn    nullCenter  heroSpace   nullRight";
 }
 
+.bodyColumn{
+    margin: 0px;
+    display: grid;
+}
+
+#nullLeft{
+    grid-area: nullLeft;
+}
+#detailColumn{
+    grid-area: detailColumn;
+}
+#nullCenter{
+    grid-area: nullCenter;
+}
+#heroSpace{
+    grid-area: heroSpace;
+    display: grid;
+
+    /*grid-template-columns:  2fr 1fr 2fr;
+    grid-template-rows:     3fr .5fr 2fr;*/
+    grid-template-columns:  40% 20% 40%;
+    grid-template-rows:     50% 10% 40%;
+    grid-template-areas:
+        "heroPic heroPic heroPic"
+        "heroText heroText heroText"
+        "heroStatLeft heroStatGap heroStatRight";
+}
+#nullRight{
+    grid-area: nullRight;
+}
+/*bodyMain grid declarations^^^^^^^^^^^^^^^^^^^^^^*/
+
+
+/*card declarations*/
 .card{
     background-color: rebeccapurple;
     text-align: justify;
-    margin-left: 2%;
+    height: 200px;
     padding-left:2%;
     padding-right:2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:    "cardTitle cardPic"
+                            "cardDetails cardPic";
+    grid-column-gap: 4%;
+    grid-row-gap:    2%;
 }
 
-.card-pic{
-    width: 120px;
-    height: 120px;
+.cardTitle{
+    grid-area: cardTitle;
+    margin-bottom: 1px;
+    height:30px;
+    overflow: hidden;
 }
+.cardDetails{
+    grid-area: cardDetails;
+    margin-top: 10%;
+    overflow:hidden;
+}
+.cardPic{
+    width: 80%;
+    margin:2%;
+    text-align: center;
+    grid-area: cardPic;
+}
+/*card declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
-.hero-pic{
+/*heroSpace declarations*/
+#heroPic{
     width:800px;
     height:450px;
-    padding: 2%;
+
+    grid-area: heroPic;
+}
+#heroText{
+    grid-area: heroText;
+}
+#heroStatLeft{
+    grid-area: heroStatLeft;
+    border-style: solid;
+    margin: 4%;
+}
+#heroStatGap{
+    grid-area: heroStatGap;
+}
+#heroStatRight{
+    grid-area: heroStatRight;
+    margin: 4%;
+}
+.statIcon{
+    width: 80px;
+}
+/*heroSpace declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+
+#botNav{
+    text-align: right;
+    grid-area: botNav;
+    align-items: end;
+}
+
+.socialIcon{
+    width: 40px;
+    margin: 2%;
+}
+
+/*Mobile*/
+@media all and (max-width: 1000px){
+    
+    #bodyDisplay{
+        grid-template-rows:     100px       75px            1600px      50px     ;
+        grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
+    }
+
+    #topNav{
+        height: 120px;
+
+        grid-template-rows:     1fr         1fr;
+        grid-template-columns:  1fr         1fr         1fr         1fr       ;
+        grid-template-areas:    "logo       name        name        name"
+                                "navButton  navButton   navButton   navButton";
+    }
+    
+    #bodyMain{
+        /*width:100%;
+        text-align: center;
+        
+        display: grid;
+        grid-area: bodyMain;
+        grid-column-gap: 0.5%;
+        grid-row-gap:    0.5%;*/
+
+        grid-template-rows:     .25fr         3fr          .25fr            6fr             .25fr        ;
+        grid-template-areas:    "nullLeft"  "heroSpace"  "nullCenter"   "detailColumn"  "nullRight";
+    }
+    
+    .cardPic{
+        width: 70%;
+        /*margin:2%;
+        text-align: center;
+        grid-area: cardPic;*/
+    }
 }
