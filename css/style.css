@@ -50,7 +50,7 @@ ul{
 
     display: grid;
     /*grid-template-rows:     8.33%       16.67%          66.67%      8.33%   ;*/
-    grid-template-rows:     .25fr        1fr             8fr         .25fr     ;
+    grid-template-rows:     .25fr        2fr             8fr         .25fr     ;
     grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
 }
 
@@ -69,6 +69,7 @@ ul{
     background-image: url("../images/Aurora\ Blur\ Stein\ Egil\ Liland.jpeg");
     background-size: cover;
     background-attachment: fixed;
+    opacity: 90%;
 }/*sets the header/footer picture and style*/
 
 
@@ -91,6 +92,8 @@ ul{
 
     display: grid;
     grid-area: logo;
+
+    border-radius: 4%;
 }
 #name{
     width: 300px;
@@ -112,6 +115,13 @@ ul{
     grid-area: bannerQuote;
     text-align: center;
     padding-top: 2%;
+}
+
+#hQuote{
+    padding-bottom: 0px auto;
+}
+#hAuthor{
+    margin-top: 0px auto;
 }
 /*all things bannerQuote^^^^^^^^^^^^^^^^^^^^*/
 
@@ -168,6 +178,8 @@ ul{
     background-color: rebeccapurple;
     text-align: justify;
     height: 200px;
+    border-radius: 2%;
+
     padding-left:2%;
     padding-right:2%;
     margin-top: 2%;
@@ -180,6 +192,10 @@ ul{
                             "cardDetails cardPic";
     grid-column-gap: 4%;
     grid-row-gap:    2%;
+}
+.card:hover{
+    box-shadow: 0px 4px 12px 2px rgba(20, 225, 252, 0.4);
+    transition: 0.2s;
 }
 
 .cardTitle{
@@ -198,6 +214,18 @@ ul{
     margin:2%;
     text-align: center;
     grid-area: cardPic;
+
+    border-radius: 4%;
+}
+
+#cardDASNW{
+    /*for js targeting*/
+}
+#cardLegacy{
+    /*for js targeting*/
+}
+#cardHGem{
+    /*for js targeting*/
 }
 /*card declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -205,15 +233,24 @@ ul{
 #heroPic{
     width:800px;
     height:450px;
+    border-radius: 4%;
 
     grid-area: heroPic;
 }
+#heroPic:hover{
+    box-shadow: 0px 4px 12px 2px rgba(20, 225, 252, 0.4);
+    transition: 0.2s;
+}
+#heroRef{
+    /*for js targeting*/
+}
+
 #heroText{
     grid-area: heroText;
 }
+
 #heroStatLeft{
     grid-area: heroStatLeft;
-    border-style: solid;
     margin: 4%;
 }
 #heroStatGap{
@@ -223,6 +260,7 @@ ul{
     grid-area: heroStatRight;
     margin: 4%;
 }
+
 .statIcon{
     width: 80px;
 }
@@ -243,7 +281,7 @@ ul{
 @media all and (max-width: 1000px){
     
     #bodyDisplay{
-        grid-template-rows:     100px       75px            1600px      50px     ;
+        grid-template-rows:     100px       125px            1600px      50px     ;
         grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
     }
 

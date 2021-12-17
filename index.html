@@ -4,14 +4,14 @@
     <head>
         <title>Geo Bio</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/x-icon" href="images/placeholder-logo.jpg" alt="starry abyss">
+        <link rel="icon" type="image/x-icon" href="images/placeholder-logo.jpg" alt="Geo's Portrait">
     </head>
     <body id="bodyDisplay">
         <!--HEADER-->
         <header class="navigation" id="topNav">
             <!--Name Etc.-->
             <div class="inline-block">
-                <img src="images/placeholder-logo.jpg" id="logo" alt="Geo Portrait">
+                <img src="images/GeoPic-SuitSquare.jpg" id="logo" alt="Geo Portrait">
                 <h2 id="name">
                     Geoffrey Kuhns
                 </h2>
@@ -29,9 +29,12 @@
         </header>
         <!--Quote/Inspiration-->
         <section id="bannerQuote">
-            <h1>
-                Inspiring Quote that Informs Identity and Work
+            <h1 id="hQuote">
+                Every saint has a past, and every sinner has a future.
             </h1>
+            <h4 id="hAuthor">
+                ~Oscar Wilde
+            </h4>
         </section>
         <!--Content: Main Body of-->
         <section id="bodyMain">
@@ -39,36 +42,39 @@
                 <!--left gutter-->
             </div>
             <div id="detailColumn" class="bodyColumn">
-                <div class="card">
-                    <h3 class="cardTitle">Card Title</h3>
+                <div class="card" id="cardDASNW">
+                    <h3 class="cardTitle">Site Redesign</h3>
                     <p class="cardDetails">
-                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                        Preserve the neighborly feel of a local nonprofit in need of a facelift.
+                        <br><b>Roles:</b> Client Services, Interaction Designer
                     </p>
-                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 1">
+                    <img src="images/DASNW-formats.jpg" class="cardPic" alt="Drive a Senior Northwest">
                 </div>
-                
-                <div class="card">
-                    <h3 class="cardTitle">Card Title</h3>
+                <div class="card" id="cardLegacy">
+                    <h3 class="cardTitle">Tabletop RPG</h3>
                     <p class="cardDetails">
-                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                        Test and weave worldbuilding, modular narratives, and high octane action.
+                        <br><b>Roles:</b> Creative Director, Lead Designer
                     </p>
-                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 2">
+                    <img src="images/Legacy-siteSplash.jpg" class="cardPic" alt="Sample 3">
                 </div>
-                <div class="card">
-                    <h3 class="cardTitle">Card Title</h3>
+                <div class="card" id="cardHGem">
+                    <h3 class="cardTitle">Travel App</h3>
                     <p class="cardDetails">
-                        Enticing life-timeline factoid which can expand into further detail--relevant to Work, since not Personal.
+                        Uncover and solve a hidden need of modern travelers.
+                        <br><b>Roles:</b> Researcher, UI Designer
                     </p>
-                    <img src="images/Negative Sun - Pixabay.jpeg" class="cardPic" alt="Sample 3">
+                    <img src="images/HiddenGem-screens.jpg" class="cardPic" alt="Sample 2">
                 </div>
             </div>
             <div id="nullCenter" class="bodyColumn">
                 <!--center "gutter"-->
             </div>
             <div id="heroSpace" class="bodyColumn">
-                <img src="images/Space Violet - Frank Cone.jpeg" id="heroPic" alt="Galaxy Hero">
+                <a href="caseStudies/Case Study - DASNW.pdf" id="heroRef">
+                <img src="images/Space Violet - Frank Cone.jpeg" id="heroPic" alt="Main Display Picture"></a>
                 <h4 id="heroText">
-                    Picture Explanation
+                    Roll over a project in order to investigate here.
                 </h4>
                 <div id="heroStatLeft">
                     <img src="images/Pie Chart.png" class="statIcon" alt="Pie Chart">
@@ -97,8 +103,12 @@
             <!--Social Media-->
             <nav class="inline-block">
                 <a href="https://www.linkedin.com/in/geoffrey-kuhns-46357425/"><img src="images/Favicon LinkedIn.png" class="socialIcon" alt="Linked In"></a>
-                <a href="https://www.facebook.com/geoffrey.kuhns"><img src="images/Favicon Facebook.png" class="socialIcon"  alt="Facebook"></a>a>
+                <a href="https://www.facebook.com/geoffrey.kuhns"><img src="images/Favicon Facebook.png" class="socialIcon"  alt="Facebook"></a>
             </nav>
         </div>
+        
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
