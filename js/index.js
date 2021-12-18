@@ -14,7 +14,7 @@ var heroImageDASNW = "images/DASNW-slideOne.jpg";
 var heroImageLegacy = "images/Legacy-siteSplash.jpg";
 var heroImageHGem = "images/HiddenGem-screens.jpg";
 var heroPicText = "Click to Learn More";
-var heroPicTextDefault = "Roll over a project in order to investigate here.";
+var heroPicTextDefault = "Roll over a project to investigate here.";
 
 /**upon click, change the banner to a random quote */
 $("#bannerQuote").on("click",function changeQuote(){

@@ -50,7 +50,7 @@ ul{
 
     display: grid;
     /*grid-template-rows:     8.33%       16.67%          66.67%      8.33%   ;*/
-    grid-template-rows:     .25fr        2fr             8fr         .25fr     ;
+    grid-template-rows:     .25fr        2fr             8fr         .75fr     ;
     grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
 }
 
@@ -58,11 +58,12 @@ ul{
     width:100%;
     height: 60px;
     position:fixed;
+    z-index: 10;
 
     grid-area: topNav;
     display: grid;
-    grid-template-columns:  1fr     2fr     5fr             1fr         1fr         1fr         1fr       ;
-    grid-template-areas:    "logo   name    nullCenterTop   navButton   navButton   navButton   navButton";
+    grid-template-columns:  1fr     4fr     3fr             5fr;
+    grid-template-areas:    "logo   name    nullCenterTop   navButton";
 }
 
 .navigation{
@@ -76,6 +77,11 @@ ul{
 .list-format{
     width: 100px;
     margin-top: -20px;
+    transform: translate(10%,0px);
+}
+.list-format:hover{
+    text-shadow: 0px 4px 12px #0a8dca;
+    transition: 0.2s;
 }
 
 .inline-block{
@@ -89,17 +95,31 @@ ul{
     margin:2%;
     float: left;
     margin-right: 10%;
+    opacity: 100% !important; /*doesn't currently work*/
+    border-radius: 4%;
+    z-index: 8;
 
     display: grid;
     grid-area: logo;
+    position: absolute;
+    transform:translate(0px,-8px);
 
-    border-radius: 4%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+#logo:hover{
+    width: 89%;
+    /*transform: translate(-48px,-20px);*/
+
 }
 #name{
     width: 300px;
     margin: 5%;
     
     grid-area: name;
+    transform: translate(60px,0px);
 }
 #nullCenterTop{
     grid-area: nullCenterTop;
@@ -119,6 +139,11 @@ ul{
 
 #hQuote{
     padding-bottom: 0px auto;
+    cursor:pointer;
+}
+#hQuote:hover{
+    text-shadow: 0px 4px 12px #0a8dca;
+    transition: 0.2s;
 }
 #hAuthor{
     margin-top: 0px auto;
@@ -136,7 +161,8 @@ ul{
     grid-column-gap: 0.5%;
     grid-row-gap:    0.5%;
 
-    grid-template-columns:  1fr         4fr             1fr         5fr         1fr       ;
+    /*grid-template-columns:  1fr         4fr             1fr         5fr         1fr       ;*//*pre-feedback*/
+    grid-template-columns:  .5fr         5.5fr             .5fr         5fr         .5fr       ;
     grid-template-areas:    "nullLeft   detailColumn    nullCenter  heroSpace   nullRight";
 }
 
@@ -157,6 +183,7 @@ ul{
 #heroSpace{
     grid-area: heroSpace;
     display: grid;
+    /*box-shadow: 0px 0px 100px #11c6e6 inset;*/
 
     /*grid-template-columns:  2fr 1fr 2fr;
     grid-template-rows:     3fr .5fr 2fr;*/
@@ -182,8 +209,6 @@ ul{
 
     padding-left:2%;
     padding-right:2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
 
     display: grid;
     grid-template-columns: 65% 35%;
@@ -233,9 +258,18 @@ ul{
 #heroPic{
     width:800px;
     height:450px;
+    /*width: 250%;*/ /* >100 to span its div's 3 columns*/
     border-radius: 4%;
+    border-style:ridge;
+    border-color: #4d0463;
+    border-bottom-width: thick;
+    border-top-width: thick;
+    border-right: 0px;
+    border-left: 0px; /*this chunk is all border control*/
 
     grid-area: heroPic;
+    transform: translate(5%,0px); /*manual alignments!*/
+    z-index: -1; /*somewhere along border creation, heroPic started trumping topNav*/
 }
 #heroPic:hover{
     box-shadow: 0px 4px 12px 2px rgba(20, 225, 252, 0.4);
@@ -247,6 +281,7 @@ ul{
 
 #heroText{
     grid-area: heroText;
+    z-index: 0;
 }
 
 #heroStatLeft{
@@ -263,6 +298,17 @@ ul{
 
 .statIcon{
     width: 80px;
+    position: absolute;
+    transform:translate(-38px,0px);
+
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+
+.statIcon:hover{
+    width: 100px;
+    transform: translate(-48px,-20px);
 }
 /*heroSpace declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
@@ -273,25 +319,42 @@ ul{
 }
 
 .socialIcon{
-    width: 40px;
+    width: 42px;
     margin: 2%;
+    position: absolute;
+    transform: translate(-180px,-10px);
+    
+    transition-property: all;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+.socialIcon:hover{
+    width: 60px;
+    transform: translate(-187px,-17px);
+}
+/*need a specific override to parse absolute positions*/
+#social2{
+    transform: translate(-100px,-10px);
+}
+#social2:hover{
+    transform: translate(-107px,-17px);
 }
 
 /*Mobile*/
 @media all and (max-width: 1000px){
     
     #bodyDisplay{
-        grid-template-rows:     100px       125px            1600px      50px     ;
+        grid-template-rows:     100px       125px            1600px      100px     ;
         grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
     }
 
     #topNav{
         height: 120px;
 
-        grid-template-rows:     1fr         1fr;
-        grid-template-columns:  1fr         1fr         1fr         1fr       ;
-        grid-template-areas:    "logo       name        name        name"
-                                "navButton  navButton   navButton   navButton";
+        grid-template-rows:     1fr;
+        grid-template-columns:  1fr         1fr         3fr        ;
+        grid-template-areas:    "logo       name        navButton  ";
     }
     
     #bodyMain{
