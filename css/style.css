@@ -79,8 +79,41 @@ ul{
     margin-top: -20px;
     transform: translate(10%,0px);
 }
-.list-format:hover{
+/*.list-format:hover{
     text-shadow: 0px 4px 12px #0a8dca;
+    transition: 0.2s;
+}*/
+
+#nav1{
+    /*About-Home
+    for js targeting*/
+}
+#nav2{
+    /*Work
+    for js targeting*/
+}
+#nav3{
+    /*Legacy
+    for js targeting*/
+}
+#nav4{
+    /*Personal
+    for js targeting*/
+}
+#nav1:hover{
+    text-shadow: 0px 4px 12px #2aca0a;
+    transition: 0.2s;
+}
+#nav2:hover{
+    text-shadow: 0px 4px 12px #ca0a0a;
+    transition: 0.2s;
+}
+#nav3:hover{
+    text-shadow: 0px 4px 12px #0a37ca;
+    transition: 0.2s;
+}
+#nav4:hover{
+    text-shadow: 0px 4px 12px #b7ca0a;
     transition: 0.2s;
 }
 
@@ -150,6 +183,10 @@ ul{
 }
 /*all things bannerQuote^^^^^^^^^^^^^^^^^^^^*/
 
+/*keep the cursor from trying to type into text fields*/
+.normText{
+    cursor: default;
+}
 
 /*bodyMain declarations*/
 #bodyMain{
@@ -246,10 +283,19 @@ ul{
 #cardDASNW{
     /*for js targeting*/
 }
+#cardPic-DASNW{
+    /*for js targeting*/
+}
 #cardLegacy{
     /*for js targeting*/
 }
+#cardPic-Legacy{
+    /*for js targeting*/
+}
 #cardHGem{
+    /*for js targeting*/
+}
+#cardPic-HGem{
     /*for js targeting*/
 }
 /*card declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
@@ -281,7 +327,8 @@ ul{
 
 #heroText{
     grid-area: heroText;
-    z-index: 0;
+    /*z-index: 0;*//*puts it above the image*/
+    margin-top: 62px;
 }
 
 #heroStatLeft{
@@ -294,6 +341,24 @@ ul{
 #heroStatRight{
     grid-area: heroStatRight;
     margin: 4%;
+}
+#iconLeft{
+    /*for js targeting*/
+}
+#statNumLeft{
+    /*for js targeting*/
+}
+#statTextLeft{
+    /*for js targeting*/
+}
+#iconRight{
+    /*for js targeting*/
+}
+#statNumRight{
+    /*for js targeting*/
+}
+#statTextRight{
+    /*for js targeting*/
 }
 
 .statIcon{
@@ -334,10 +399,24 @@ ul{
     transform: translate(-187px,-17px);
 }
 /*need a specific override to parse absolute positions*/
-#social2{
+#socialRes{
+    transform: translate(-275px,-20px);
+    width: 65px;
+}
+#socialRes:hover{
+    transform: translate(-282px,-27px);
+    width: 80px;
+}
+#socialLink{
+    /*for js targeting*/
+}
+#socialLink:hover{
+    /*for js targeting*/
+}
+#socialFaz{
     transform: translate(-100px,-10px);
 }
-#social2:hover{
+#socialFaz:hover{
     transform: translate(-107px,-17px);
 }
 

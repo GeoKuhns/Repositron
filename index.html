@@ -12,18 +12,16 @@
             <!--Name Etc.-->
             <div class="inline-block">
                 <img src="images/GeoPic-SuitSquare.jpg" id="logo" alt="Geo Portrait">
-                <h2 id="name">
-                    Geoffrey Kuhns
-                </h2>
+                <h2 class="normText" id="name">Geoffrey Kuhns </h2>
             </div>
             <div id="nullCenterTop"></div>
             <!--Links Etc.-->
             <nav id="navButton">
                 <ul>
-                    <li class="list-format"><a href=""><h5>Work</h5></a></li>
-                    <li class="list-format"><a href=""><h5>About</h5></a></li>
-                    <li class="list-format"><a href=""><h5>Contact</h5></a></li>
-                    <li class="list-format"><a href="personal.html"><h5>Personal</h5></a></li>
+                    <li class="list-format"><a href=""><h5 id="nav1">About</h5></a></li>
+                    <li class="list-format"><a href=""><h5 id="nav2">Work</h5></a></li>
+                    <li class="list-format"><a href=""><h5 id="nav3">Legacy</h5></a></li>
+                    <li class="list-format"><a href="personal.html"><h5 id="nav4">Personal</h5></a></li>
                 </ul>
             </nav>
         </header>
@@ -32,7 +30,7 @@
             <h1 id="hQuote">
                 Every saint has a past, and every sinner has a future.
             </h1>
-            <h4 id="hAuthor">
+            <h4 class="normText" id="hAuthor">
                 ~Oscar Wilde
             </h4>
         </section>
@@ -43,28 +41,28 @@
             </div>
             <div id="detailColumn" class="bodyColumn">
                 <div class="card" id="cardDASNW">
-                    <h3 class="cardTitle">Site Redesign</h3>
-                    <p class="cardDetails">
+                    <h3 class="cardTitle normText">Site Redesign</h3>
+                    <p class="cardDetails normText">
                         Preserve the neighborly feel of a local nonprofit in need of a facelift.
                         <br><b>Roles:</b> Client Services, Interaction Designer
                     </p>
-                    <img src="images/DASNW-formats.jpg" class="cardPic" alt="Drive a Senior Northwest">
+                    <img src="images/DASNW-formats.jpg" class="cardPic" id="cardPic-DASNW" alt="Drive a Senior Northwest">
                 </div>
                 <div class="card" id="cardLegacy">
-                    <h3 class="cardTitle">Tabletop RPG</h3>
-                    <p class="cardDetails">
+                    <h3 class="cardTitle normText">Tabletop RPG</h3>
+                    <p class="cardDetails normText">
                         Test and weave worldbuilding, modular narratives, and high octane action.
                         <br><b>Roles:</b> Creative Director, Lead Designer
                     </p>
-                    <img src="images/Legacy-siteSplash.jpg" class="cardPic" alt="Sample 3">
+                    <img src="images/Legacy-siteSplash.jpg" class="cardPic" id="cardPic-Legacy" alt="Sample 3">
                 </div>
                 <div class="card" id="cardHGem">
-                    <h3 class="cardTitle">Travel App</h3>
-                    <p class="cardDetails">
+                    <h3 class="cardTitle normText">Travel App</h3>
+                    <p class="cardDetails normText">
                         Uncover and solve a hidden need of modern travelers.
                         <br><b>Roles:</b> Researcher, UI Designer
                     </p>
-                    <img src="images/HiddenGem-screens.jpg" class="cardPic" alt="Sample 2">
+                    <img src="images/HiddenGem-screens.jpg" class="cardPic" id="cardPic-HGem" alt="Sample 2">
                 </div>
             </div>
             <div id="nullCenter" class="bodyColumn">
@@ -72,14 +70,15 @@
             </div>
             <div id="heroSpace" class="bodyColumn">
                 <a href="caseStudies/Case Study - DASNW.pdf" id="heroRef">
-                <img src="images/Space Violet - Frank Cone.jpeg" id="heroPic" alt="Main Display Picture"></a>
-                <h4 id="heroText">
+                    <img src="images/Space Violet - Frank Cone.jpeg" id="heroPic" alt="Main Display Picture">
+                </a>
+                <h4 class="normText" id="heroText">
                     Roll over a project to investigate here.
                 </h4>
                 <div id="heroStatLeft">
-                    <img src="images/Pie Chart.png" class="statIcon" alt="Pie Chart">
-                    <br><br><br><br><h2>42%</h2>
-                    <p>
+                    <img id="iconLeft" src="images/Pie Chart.svg" class="statIcon" alt="Pie Chart">
+                    <br><br><br><br><h2 class="normText" id="statNumLeft">42%</h2>
+                    <p class="normText" id="statTextLeft">
                         Insightful Deduction
                     </p>
                 </div>
@@ -87,9 +86,9 @@
                     <!--StatGap-->
                 </div>
                 <div id="heroStatRight">
-                    <img src="images/Crosshair.png" class="statIcon" alt="Cross Hair">
-                    <br><br><br><br><h2>42%</h2>
-                    <p>
+                    <img id="iconRight" src="images/Crosshair.svg" class="statIcon" alt="Cross Hair">
+                    <br><br><br><br><h2 class="normText" id="statNumRight">42%</h2>
+                    <p class="normText" id="statTextRight">
                         Insightful Deduction
                     </p>
                 </div>
@@ -102,8 +101,9 @@
         <div class="navigation" id="botNav">
             <!--Social Media-->
             <nav>
-                <a href="https://www.linkedin.com/in/geoffrey-kuhns-46357425/"><img src="images/Favicon LinkedIn 2.png" class="socialIcon" alt="Linked In"></a>
-                <a href="https://www.facebook.com/geoffrey.kuhns"><img src="images/Favicon Facebook 2.png" class="socialIcon" id="social2" alt="Facebook"></a>
+                <a href="Resume-KuhnsGeoffrey.pdf"><img src="images/Doc.svg" class="socialIcon" id="socialRes" alt="Resume"></a>
+                <a href="https://www.linkedin.com/in/geoffrey-kuhns-46357425/"><img src="images/Favicon LinkedIn 2.png" class="socialIcon" id="socialLink" alt="Linked In"></a>
+                <a href="https://www.facebook.com/geoffrey.kuhns"><img src="images/Favicon Facebook 2.png" class="socialIcon" id="socialFaz" alt="Facebook"></a>
             </nav>
         </div>
         

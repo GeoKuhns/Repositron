@@ -13,8 +13,18 @@ var heroImageDefault = "images/Space Violet - Frank Cone.jpeg";
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
 var heroImageLegacy = "images/Legacy-siteSplash.jpg";
 var heroImageHGem = "images/HiddenGem-screens.jpg";
-var heroPicText = "Click to Learn More";
-var heroPicTextDefault = "Roll over a project to investigate here.";
+/** */
+var heroPicText = "Click Above to Learn More";
+var heroPicTextDefault = document.getElementById("heroText").innerHTML;
+/**Defaults = as provided in HTML files */
+var iconLeftDefault = document.getElementById("iconLeft").src;
+var statNumLeftDefault = document.getElementById("statNumLeft").innerHTML;
+var statTextLeftDefault = document.getElementById("statTextLeft").innerHTML;
+var iconRightDefault = document.getElementById("iconRight").src;
+var statNumRightDefault = document.getElementById("statNumRight").innerHTML;
+var statTextRightDefault = document.getElementById("statTextRight").innerHTML;
+
+
 
 /**upon click, change the banner to a random quote */
 $("#bannerQuote").on("click",function changeQuote(){
@@ -81,6 +91,12 @@ $("#cardDASNW").on("mouseover",function(){
     console.log("CardDASNW Rolled Over!");
     document.getElementById("heroPic").src = heroImageDASNW;
     document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
     lastCard = "DASNW"; /**changes #heroPic to DASNW's */
@@ -89,6 +105,12 @@ $("#cardLegacy").on("mouseover",function(){
     console.log("CardLegacy Rolled Over!");
     document.getElementById("heroPic").src = heroImageLegacy;
     document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Legacy.pdf";
     lastCard = "Legacy"; /**changes #heroPic to Legacy's */
@@ -97,6 +119,12 @@ $("#cardHGem").on("mouseover",function(){
     console.log("CardHGem Rolled Over!");
     document.getElementById("heroPic").src = heroImageHGem;
     document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
     lastCard = "HGem"; /**changes #heroPic to Hidden Gem's */
@@ -105,8 +133,14 @@ $(".navigation").on("mouseover",function(){
     console.log("Nav Rolled Over!");
     document.getElementById("heroPic").src = heroImageDefault;
     document.getElementById("heroText").innerHTML = heroPicTextDefault;
+    document.getElementById("iconLeft").src = iconLeftDefault;
+    document.getElementById("statNumLeft").innerHTML = statNumLeftDefault;
+    document.getElementById("statTextLeft").innerHTML = statTextLeftDefault;
+    document.getElementById("iconRight").src = iconRightDefault;
+    document.getElementById("statNumRight").innerHTML = statNumRightDefault;
+    document.getElementById("statTextRight").innerHTML = statTextRightDefault;
     document.getElementById("heroRef").removeAttribute("href");
-    lastCard = "default"; /**resets #heroPic on nav-over */
+    lastCard = "default"; /**resets #heroPic on nav-over to index Defaults*/
 });
 
 /* upon clicking a stat*/
