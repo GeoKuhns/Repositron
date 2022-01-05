@@ -1,5 +1,3 @@
-/*Hello World!*/
-
 /**regarding the Quote */
 var currentQuote = "Fiction reveals truths that reality obscures.";
 var currentAuthor = "~Jessamyn West";
@@ -9,14 +7,27 @@ var tempRandCheck = tempRand; /**used to ensure the same quote doesn't appear tw
 /**regarding the Hero Space */
 /**change the images here */
 var lastCard = "default";
-var heroImageDefault = "images/Space Violet - Frank Cone.jpeg";
+/** About */
+var heroImageLead = "images/DASNW-slideOne.jpg";
+var heroImageChange = "images/Legacy-siteSplash.jpg";
+var heroImageUser = "images/HiddenGem-screens.jpg";
+/** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
-var heroImageLegacy = "images/Legacy-siteSplash.jpg";
+var heroImageSPlant = "images/Legacy-siteSplash.jpg";
 var heroImageHGem = "images/HiddenGem-screens.jpg";
+/** Legacy */
+var heroImageRPG = "images/DASNW-slideOne.jpg";
+var heroImageCharSheet = "images/Legacy-siteSplash.jpg";
+var heroImageCon = "images/HiddenGem-screens.jpg";
+/** Personal */
+var heroImageGames = "images/DASNW-slideOne.jpg";
+var heroImageGuru = "images/Legacy-siteSplash.jpg";
+var heroImageHobbies = "images/HiddenGem-screens.jpg";
 /** */
 var heroPicText = "Click Above to Learn More";
 var heroPicTextDefault = document.getElementById("heroText").innerHTML;
 /**Defaults = as provided in HTML files */
+var heroImageDefault = "images/Space Violet - Frank Cone.jpeg";
 var iconLeftDefault = document.getElementById("iconLeft").src;
 var statNumLeftDefault = document.getElementById("statNumLeft").innerHTML;
 var statTextLeftDefault = document.getElementById("statTextLeft").innerHTML;
@@ -87,58 +98,241 @@ $("#bannerQuote").on("click",function changeQuote(){
 });
 
 /**card-hover changes the heroSpace and adds an href to Case Study */
-$("#cardDASNW").on("mouseover",function(){
-    console.log("CardDASNW Rolled Over!");
-    document.getElementById("heroPic").src = heroImageDASNW;
+/** ----------------ABOUT------------------- */
+$("#about-lead").on("mouseover",function(){
+    console.log("Leadership Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageLead;
     document.getElementById("heroText").innerHTML = heroPicText;
+
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "100%";
     document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "15";
     document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - DASNW.pdf";
+    lastCard = "Leadership"; /**changes #heroPic to Leadership's */
+});
+$("#about-change").on("mouseover",function(){
+    console.log("Change Management Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageChange;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Legacy.pdf";
+    lastCard = "Change Management"; /**changes #heroPic to Change Management's */
+});
+$("#about-user").on("mouseover",function(){
+    console.log("User Centric Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageUser;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Hidden Gem.pdf";
+    lastCard = "User Centric"; /**changes #heroPic to User Centric */
+});
+/** ----------------WORK-------------------- */
+$("#work-DASNW").on("mouseover",function(){
+    console.log("DASNW Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageDASNW;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
     lastCard = "DASNW"; /**changes #heroPic to DASNW's */
 });
-$("#cardLegacy").on("mouseover",function(){
-    console.log("CardLegacy Rolled Over!");
-    document.getElementById("heroPic").src = heroImageLegacy;
+$("#work-SPlant").on("mouseover",function(){
+    console.log("SPlant Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageSPlant;
     document.getElementById("heroText").innerHTML = heroPicText;
+
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "100%";
     document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "15";
     document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Legacy.pdf";
-    lastCard = "Legacy"; /**changes #heroPic to Legacy's */
+    lastCard = "SPlant"; /**changes #heroPic to Legacy's */
 });
-$("#cardHGem").on("mouseover",function(){
-    console.log("CardHGem Rolled Over!");
+$("#work-HGem").on("mouseover",function(){
+    console.log("HGem Rolled Over!");
+
     document.getElementById("heroPic").src = heroImageHGem;
     document.getElementById("heroText").innerHTML = heroPicText;
+
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "100%";
     document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "15";
     document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
     lastCard = "HGem"; /**changes #heroPic to Hidden Gem's */
 });
+/** ---------------LEGACY------------------- */
+$("#legacy-rpg").on("mouseover",function(){
+    console.log("Tabletop RPG Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageRPG;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - DASNW.pdf";
+    lastCard = "RPG"; /**changes #heroPic to RPG's */
+});
+$("#legacy-charSheet").on("mouseover",function(){
+    console.log("User Interface Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageCharSheet;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Legacy.pdf";
+    lastCard = "CharSheet"; /**changes #heroPic to CharSheet's */
+});
+$("#legacy-con").on("mouseover",function(){
+    console.log("Showmanship Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageCon;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Hidden Gem.pdf";
+    lastCard = "Con"; /**changes #heroPic to Con's */
+});
+/** --------------PERSONAL------------------ */
+$("#pers-games").on("mouseover",function(){
+    console.log("Games Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageGames;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - DASNW.pdf";
+    lastCard = "Games"; /**changes #heroPic to Game's */
+});
+$("#pers-guru").on("mouseover",function(){
+    console.log("Guru Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageGuru;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Legacy.pdf";
+    lastCard = "Guru"; /**changes #heroPic to Guru's */
+});
+$("#pers-hobbies").on("mouseover",function(){
+    console.log("Hobbies Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageHobbies;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "100%";
+    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "15";
+    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Hidden Gem.pdf";
+    lastCard = "Hobbies"; /**changes #heroPic to Hobbies' */
+});
+/** ---------------NAV-RESET-------------------- */
 $(".navigation").on("mouseover",function(){
     console.log("Nav Rolled Over!");
+
     document.getElementById("heroPic").src = heroImageDefault;
     document.getElementById("heroText").innerHTML = heroPicTextDefault;
+
     document.getElementById("iconLeft").src = iconLeftDefault;
     document.getElementById("statNumLeft").innerHTML = statNumLeftDefault;
     document.getElementById("statTextLeft").innerHTML = statTextLeftDefault;
+
     document.getElementById("iconRight").src = iconRightDefault;
     document.getElementById("statNumRight").innerHTML = statNumRightDefault;
     document.getElementById("statTextRight").innerHTML = statTextRightDefault;
+
     document.getElementById("heroRef").removeAttribute("href");
     lastCard = "default"; /**resets #heroPic on nav-over to index Defaults*/
 });

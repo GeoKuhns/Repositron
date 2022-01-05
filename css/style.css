@@ -280,22 +280,80 @@ ul{
     border-radius: 4%;
 }
 
-#cardDASNW{
+#about-lead{
     /*for js targeting*/
 }
-#cardPic-DASNW{
+#pic-lead{
     /*for js targeting*/
 }
-#cardLegacy{
+#about-change{
     /*for js targeting*/
 }
-#cardPic-Legacy{
+#pic-change{
     /*for js targeting*/
 }
-#cardHGem{
+#about-user{
     /*for js targeting*/
 }
-#cardPic-HGem{
+#pic-user{
+    /*for js targeting*/
+}
+
+#work-DASNW{
+    /*for js targeting*/
+}
+#pic-DASNW{
+    /*for js targeting*/
+}
+#work-SPlant{
+    /*for js targeting*/
+}
+#pic-SPlant{
+    /*for js targeting*/
+}
+#work-HGem{
+    /*for js targeting*/
+}
+#pic-HGem{
+    /*for js targeting*/
+}
+
+#legacy-rpg{
+    /*for js targeting*/
+}
+#pic-rpg{
+    /*for js targeting*/
+}
+#legacy-charSheet{
+    /*for js targeting*/
+}
+#pic-charSheet{
+    /*for js targeting*/
+}
+#legacy-con{
+    /*for js targeting*/
+}
+#pic-con{
+    /*for js targeting*/
+}
+
+
+#pers-games{
+    /*for js targeting*/
+}
+#pic-games{
+    /*for js targeting*/
+}
+#pers-guru{
+    /*for js targeting*/
+}
+#pic-guru{
+    /*for js targeting*/
+}
+#pers-hobbies{
+    /*for js targeting*/
+}
+#pic-hobbies{
     /*for js targeting*/
 }
 /*card declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
