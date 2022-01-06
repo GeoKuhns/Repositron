@@ -8,26 +8,26 @@ var tempRandCheck = tempRand; /**used to ensure the same quote doesn't appear tw
 /**change the images here */
 var lastCard = "default";
 /** About */
-var heroImageLead = "images/DASNW-slideOne.jpg";
-var heroImageChange = "images/Legacy-siteSplash.jpg";
-var heroImageUser = "images/HiddenGem-screens.jpg";
+var heroImageLead = "images/Team Kuhns A.jpg";
+var heroImageChange = "images/WBoard Default.jpg";
+var heroImageUser = "images/WOW Boards.jpg";
 /** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
-var heroImageSPlant = "images/Legacy-siteSplash.jpg";
+var heroImageSPlant = "images/SoulPlant Hype.jpg";
 var heroImageHGem = "images/HiddenGem-screens.jpg";
 /** Legacy */
-var heroImageRPG = "images/DASNW-slideOne.jpg";
-var heroImageCharSheet = "images/Legacy-siteSplash.jpg";
-var heroImageCon = "images/HiddenGem-screens.jpg";
+var heroImageRPG = "images/Legacy-siteSplash.jpg";
+var heroImageCharSheet = "images/Legacy-CharSheetHero.jpg";
+var heroImageCon = "images/Dice Setup.jpg";
 /** Personal */
-var heroImageGames = "images/DASNW-slideOne.jpg";
-var heroImageGuru = "images/Legacy-siteSplash.jpg";
-var heroImageHobbies = "images/HiddenGem-screens.jpg";
+var heroImageGames = "images/Smite Screen.jpg";
+var heroImageGuru = "images/KnightDraw.jpg";
+var heroImageHobbies = "images/Austin Oasis.jpg";
 /** */
 var heroPicText = "Click Above to Learn More";
 var heroPicTextDefault = document.getElementById("heroText").innerHTML;
 /**Defaults = as provided in HTML files */
-var heroImageDefault = "images/Space Violet - Frank Cone.jpeg";
+var heroImageDefault = document.getElementById("heroPic").src;
 var iconLeftDefault = document.getElementById("iconLeft").src;
 var statNumLeftDefault = document.getElementById("statNumLeft").innerHTML;
 var statTextLeftDefault = document.getElementById("statTextLeft").innerHTML;
@@ -106,12 +106,12 @@ $("#about-lead").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "81";
+    document.getElementById("statTextLeft").innerHTML = "Largest Team";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "100%";
+    document.getElementById("statTextRight").innerHTML = "Peer-Only Handwriting Above";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
@@ -124,12 +124,12 @@ $("#about-change").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "2";
+    document.getElementById("statTextLeft").innerHTML = "Avg. Promotions per Job";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "6+";
+    document.getElementById("statTextRight").innerHTML = "Training Manuals Created";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Legacy.pdf";
@@ -142,12 +142,12 @@ $("#about-user").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "97.5%";
+    document.getElementById("statTextLeft").innerHTML = "Direct Report Approval";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "20+";
+    document.getElementById("statTextRight").innerHTML = "Interviews Proctored";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
@@ -179,12 +179,12 @@ $("#work-SPlant").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "2";
+    document.getElementById("statTextLeft").innerHTML = "Team Size";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "70+";
+    document.getElementById("statTextRight").innerHTML = "Frames Stitched";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Legacy.pdf";
@@ -197,12 +197,12 @@ $("#work-HGem").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "3";
+    document.getElementById("statTextLeft").innerHTML = "Weeks to Complete";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "0";
+    document.getElementById("statTextRight").innerHTML = "Dead Ends";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
@@ -216,15 +216,15 @@ $("#legacy-rpg").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "99.4%";
+    document.getElementById("statTextLeft").innerHTML = "Player Approval";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "4";
+    document.getElementById("statTextRight").innerHTML = "States Played In";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - DASNW.pdf";
+        "caseStudies/Case Study - Legacy.pdf";
     lastCard = "RPG"; /**changes #heroPic to RPG's */
 });
 $("#legacy-charSheet").on("mouseover",function(){
@@ -234,15 +234,15 @@ $("#legacy-charSheet").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "8";
+    document.getElementById("statTextLeft").innerHTML = "Distinct Versions";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "40+";
+    document.getElementById("statTextRight").innerHTML = "Iterations";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Legacy.pdf";
+        "caseStudies/Minor Case - Legacy CharSheets.pdf";
     lastCard = "CharSheet"; /**changes #heroPic to CharSheet's */
 });
 $("#legacy-con").on("mouseover",function(){
@@ -252,12 +252,12 @@ $("#legacy-con").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "35%";
+    document.getElementById("statTextLeft").innerHTML = "Came Back for More";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "170";
+    document.getElementById("statTextRight").innerHTML = "Most Miles Driven to an Event";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
@@ -271,12 +271,12 @@ $("#pers-games").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "12";
+    document.getElementById("statTextLeft").innerHTML = "Hours per Week";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "49";
+    document.getElementById("statTextRight").innerHTML = "Board Game Boxes";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
@@ -289,12 +289,12 @@ $("#pers-guru").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "1";
+    document.getElementById("statTextLeft").innerHTML = "Wedding Ministered";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "6";
+    document.getElementById("statTextRight").innerHTML = "Retreats Put On";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Legacy.pdf";
@@ -307,12 +307,12 @@ $("#pers-hobbies").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "3";
+    document.getElementById("statTextLeft").innerHTML = "Years Paddleboarding";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "49";
+    document.getElementById("statTextRight").innerHTML = "Board Game Boxes";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
