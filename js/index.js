@@ -110,8 +110,8 @@ $("#about-lead").on("mouseover",function(){
     document.getElementById("statTextLeft").innerHTML = "Largest Team";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "100%";
-    document.getElementById("statTextRight").innerHTML = "Peer-Only Handwriting Above";
+    document.getElementById("statNumRight").innerHTML = "90%";
+    document.getElementById("statTextRight").innerHTML = "Peer Engagement";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
@@ -257,7 +257,7 @@ $("#legacy-con").on("mouseover",function(){
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "170";
-    document.getElementById("statTextRight").innerHTML = "Most Miles Driven to an Event";
+    document.getElementById("statTextRight").innerHTML = "Most Miles to an Event";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - Hidden Gem.pdf";
