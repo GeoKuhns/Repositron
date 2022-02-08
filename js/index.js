@@ -13,6 +13,7 @@ var heroImageChange = "images/WBoard Default.jpg";
 var heroImageUser = "images/WOW Boards.jpg";
 /** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
+var heroImageFridgeFA = "images/FFA Unit.png";
 var heroImageSPlant = "images/SoulPlant Hype.jpg";
 var heroImageHGem = "images/HiddenGem-screens.jpg";
 /** Legacy */
@@ -114,7 +115,7 @@ $("#about-lead").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Peer Engagement";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - DASNW.pdf";
+        ""/*"caseStudies/Case Study - DASNW.pdf"*/;
     lastCard = "Leadership"; /**changes #heroPic to Leadership's */
 });
 $("#about-change").on("mouseover",function(){
@@ -132,7 +133,7 @@ $("#about-change").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Training Manuals Created";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Legacy.pdf";
+        ""/*"caseStudies/Case Study - Legacy.pdf"*/;
     lastCard = "Change Management"; /**changes #heroPic to Change Management's */
 });
 $("#about-user").on("mouseover",function(){
@@ -150,7 +151,7 @@ $("#about-user").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Interviews Proctored";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Hidden Gem.pdf";
+        ""/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
     lastCard = "User Centric"; /**changes #heroPic to User Centric */
 });
 /** ----------------WORK-------------------- */
@@ -161,15 +162,33 @@ $("#work-DASNW").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "100%";
-    document.getElementById("statTextLeft").innerHTML = "Board Approval";
+    document.getElementById("statNumLeft").innerHTML = "15";
+    document.getElementById("statTextLeft").innerHTML = "Tests & Interviews";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "15";
-    document.getElementById("statTextRight").innerHTML = "Tests & Interviews";
+    document.getElementById("statNumRight").innerHTML = "100%";
+    document.getElementById("statTextRight").innerHTML = "Board Approval";
 
     document.getElementById("heroRef").href =
         "caseStudies/Case Study - DASNW.pdf";
+    lastCard = "DASNW"; /**changes #heroPic to DASNW's */
+});
+$("#work-FridgeFA").on("mouseover",function(){
+    console.log("FridgeFA Rolled Over!");
+
+    document.getElementById("heroPic").src = heroImageFridgeFA;
+    document.getElementById("heroText").innerHTML = heroPicText;
+
+    document.getElementById("iconLeft").src = "images/Crosshair.svg";
+    document.getElementById("statNumLeft").innerHTML = "3";
+    document.getElementById("statTextLeft").innerHTML = "User Touchpoints";
+
+    document.getElementById("iconRight").src = "images/Pie Chart.svg";
+    document.getElementById("statNumRight").innerHTML = "2";
+    document.getElementById("statTextRight").innerHTML = "Distinct Journeys";
+
+    document.getElementById("heroRef").href =
+        "caseStudies/Case Study - Fridge For All.pdf";
     lastCard = "DASNW"; /**changes #heroPic to DASNW's */
 });
 $("#work-SPlant").on("mouseover",function(){
@@ -187,7 +206,7 @@ $("#work-SPlant").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Frames Stitched";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Legacy.pdf";
+        "https://www.figma.com/proto/EcRZgXWv4wo6MLRMzluuK8/Group-7---Project-1---Mid-Fi-Prototype-Collab?node-id=400%3A23130&scaling=scale-down&page-id=400%3A22954&starting-point-node-id=400%3A23130&show-proto-sidebar=1";
     lastCard = "SPlant"; /**changes #heroPic to Legacy's */
 });
 $("#work-HGem").on("mouseover",function(){
@@ -260,7 +279,7 @@ $("#legacy-con").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Most Miles to an Event";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Hidden Gem.pdf";
+        ""/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
     lastCard = "Con"; /**changes #heroPic to Con's */
 });
 /** --------------PERSONAL------------------ */
@@ -271,15 +290,15 @@ $("#pers-games").on("mouseover",function(){
     document.getElementById("heroText").innerHTML = heroPicText;
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "12";
-    document.getElementById("statTextLeft").innerHTML = "Hours per Week";
+    document.getElementById("statNumLeft").innerHTML = "Diamond";
+    document.getElementById("statTextLeft").innerHTML = "Average Rank";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "49";
-    document.getElementById("statTextRight").innerHTML = "Board Game Boxes";
+    document.getElementById("statTextRight").innerHTML = "Board Games Owned";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - DASNW.pdf";
+        ""/*"caseStudies/Case Study - DASNW.pdf"*/;
     lastCard = "Games"; /**changes #heroPic to Game's */
 });
 $("#pers-guru").on("mouseover",function(){
@@ -297,7 +316,7 @@ $("#pers-guru").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Retreats Put On";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Legacy.pdf";
+        ""/*"caseStudies/Case Study - Legacy.pdf"*/;
     lastCard = "Guru"; /**changes #heroPic to Guru's */
 });
 $("#pers-hobbies").on("mouseover",function(){
@@ -315,7 +334,7 @@ $("#pers-hobbies").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Board Game Boxes";
 
     document.getElementById("heroRef").href =
-        "caseStudies/Case Study - Hidden Gem.pdf";
+        ""/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
     lastCard = "Hobbies"; /**changes #heroPic to Hobbies' */
 });
 /** ---------------NAV-RESET-------------------- */
