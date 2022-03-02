@@ -26,6 +26,7 @@ var heroImageGuru = "images/KnightDraw.jpg";
 var heroImageHobbies = "images/Austin Oasis.jpg";
 /** */
 var heroPicText = "Click Above to Learn More";
+var heroLinkText = "Click Here for Demo"; /*not used: hrefs need to be cited in this string, and they vary*/
 var heroPicTextDefault = document.getElementById("heroText").innerHTML;
 /**Defaults = as provided in HTML files */
 var heroImageDefault = document.getElementById("heroPic").src;
@@ -159,7 +160,7 @@ $("#work-DASNW").on("mouseover",function(){
     console.log("DASNW Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageDASNW;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/kF9evvR5l4Fjnj4Ul0q0Zp/DASNW-Revision?node-id=474%3A10485&scaling=scale-down&page-id=459%3A7816&starting-point-node-id=474%3A10485&show-proto-sidebar=1">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "15";
