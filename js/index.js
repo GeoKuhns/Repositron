@@ -178,7 +178,7 @@ $("#work-FridgeFA").on("mouseover",function(){
     console.log("FridgeFA Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageFridgeFA;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/3cn0eXRCUJks7PqEx9rwEw/Fridge-For-All?node-id=165%3A19328&scaling=scale-down&page-id=165%3A19316&starting-point-node-id=165%3A19328">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "3";
@@ -331,8 +331,8 @@ $("#pers-hobbies").on("mouseover",function(){
     document.getElementById("statTextLeft").innerHTML = "Years Paddleboarding";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
-    document.getElementById("statNumRight").innerHTML = "49";
-    document.getElementById("statTextRight").innerHTML = "Board Game Boxes";
+    document.getElementById("statNumRight").innerHTML = "Too Few";
+    document.getElementById("statTextRight").innerHTML = "Salsas Tasted";
 
     document.getElementById("heroRef").href =
         ""/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
