@@ -10,7 +10,7 @@ var lastCard = "default";
 /** About */
 var heroImageLead = "images/Team Kuhns A.jpg";
 var heroImageChange = "images/WBoard Default.jpg";
-var heroImageUser = "images/WOW Boards.jpg";
+var heroImageUser = "images/Validation.jpg";
 /** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
 var heroImageFridgeFA = "images/FFA Unit.png";
@@ -23,7 +23,7 @@ var heroImageCon = "images/Dice Setup.jpg";
 /** Personal */
 var heroImageGames = "images/Smite Screen.jpg";
 var heroImageGuru = "images/KnightDraw.jpg";
-var heroImageHobbies = "images/Austin Oasis.jpg";
+var heroImageHobbies = "images/Charleston Skyline.jpg";
 /** */
 var heroPicText = "Click Above to Learn More";
 var heroLinkText = "Click Here for Demo"; /*not used: hrefs need to be cited in this string, and they vary*/
@@ -105,7 +105,7 @@ $("#about-lead").on("mouseover",function(){
     console.log("Leadership Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageLead;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Others First";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "81";
@@ -116,14 +116,14 @@ $("#about-lead").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Peer Engagement";
 
     document.getElementById("heroRef").href =
-        ""/*"caseStudies/Case Study - DASNW.pdf"*/;
+        heroImageLead/*"caseStudies/Case Study - DASNW.pdf"*/;
     lastCard = "Leadership"; /**changes #heroPic to Leadership's */
 });
 $("#about-change").on("mouseover",function(){
     console.log("Change Management Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageChange;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Plan. Communicate. Execute. Sustain.";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "2";
@@ -133,15 +133,15 @@ $("#about-change").on("mouseover",function(){
     document.getElementById("statNumRight").innerHTML = "6+";
     document.getElementById("statTextRight").innerHTML = "Training Manuals Created";
 
-    document.getElementById("heroRef").href =
-        ""/*"caseStudies/Case Study - Legacy.pdf"*/;
+    document.getElementById("heroRef").href = heroImageChange;
+        /*"caseStudies/Case Study - Legacy.pdf"*/
     lastCard = "Change Management"; /**changes #heroPic to Change Management's */
 });
 $("#about-user").on("mouseover",function(){
     console.log("User Centric Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageUser;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "You Didn't Hear It From Me";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "97.5%";
@@ -152,7 +152,7 @@ $("#about-user").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Interviews Proctored";
 
     document.getElementById("heroRef").href =
-        ""/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
+        "images/Validation.jpg"/*"caseStudies/Case Study - Hidden Gem.pdf"*/;
     lastCard = "User Centric"; /**changes #heroPic to User Centric */
 });
 /** ----------------WORK-------------------- */
@@ -196,7 +196,7 @@ $("#work-SPlant").on("mouseover",function(){
     console.log("SPlant Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageSPlant;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/EcRZgXWv4wo6MLRMzluuK8/Group-7---Project-1---Mid-Fi-Prototype-Collab?node-id=400%3A23130&scaling=scale-down&page-id=400%3A22954&starting-point-node-id=400%3A23130&show-proto-sidebar=1">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "2";
@@ -207,7 +207,7 @@ $("#work-SPlant").on("mouseover",function(){
     document.getElementById("statTextRight").innerHTML = "Frames Stitched";
 
     document.getElementById("heroRef").href =
-        "https://www.figma.com/proto/EcRZgXWv4wo6MLRMzluuK8/Group-7---Project-1---Mid-Fi-Prototype-Collab?node-id=400%3A23130&scaling=scale-down&page-id=400%3A22954&starting-point-node-id=400%3A23130&show-proto-sidebar=1";
+        "caseStudies/Case Study - Soul Plant.pdf";
     lastCard = "SPlant"; /**changes #heroPic to Legacy's */
 });
 $("#work-HGem").on("mouseover",function(){
@@ -288,7 +288,7 @@ $("#pers-games").on("mouseover",function(){
     console.log("Games Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageGames;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Solo Queue Fill";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "Diamond";
@@ -306,7 +306,7 @@ $("#pers-guru").on("mouseover",function(){
     console.log("Guru Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageGuru;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Listen";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "1";
@@ -324,7 +324,7 @@ $("#pers-hobbies").on("mouseover",function(){
     console.log("Hobbies Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageHobbies;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Born in Charleston, SC";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "3";
