@@ -88,7 +88,6 @@ a{
 
 .list-format{
     /*width: 100px;
-    margin-top: -20px;
     transform: translate(10%,0px);*/
     margin-right: 4vw;
     margin-top: -4vh;
@@ -292,8 +291,9 @@ a{
 
 .cardTitle{
     grid-area: cardTitle;
+    margin-top: 4px;
     margin-bottom: 1px;
-    height:3vh;
+    height:25px;
     overflow: hidden;
 }
 .cardDetails{

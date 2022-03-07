@@ -19,9 +19,9 @@ var heroImageHGem = "images/HiddenGem-screens.jpg";
 /** Legacy */
 var heroImageRPG = "images/Legacy-siteSplash.jpg";
 var heroImageCharSheet = "images/Legacy-CharSheetHero.jpg";
-var heroImageCon = "images/Dice Setup.jpg";
+var heroImageCon = "images/Dice Setup.JPG"; /**lack of caps messes up Host Monster */
 /** Personal */
-var heroImageGames = "images/Smite Screen.jpg";
+var heroImageGames = "images/Smite Screen.JPG";/**lack of caps messes up Host Monster */
 var heroImageGuru = "images/KnightDraw.jpg";
 var heroImageHobbies = "images/Charleston Skyline.jpg";
 /** */
