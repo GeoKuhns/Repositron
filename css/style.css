@@ -74,7 +74,7 @@ a{
     grid-area: topNav;
     display: grid;
     /*grid-template-columns:1fr     4fr     3fr             5fr;*/
-    grid-template-columns:  20vw    20vw    30vw            15vw;
+    grid-template-columns:  20vw    20vw    24vw            15vw;
     grid-template-areas:    "logo   name    nullCenterTop   navButton";
 }
 

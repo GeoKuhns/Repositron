@@ -105,7 +105,7 @@ $("#about-lead").on("mouseover",function(){
     console.log("Leadership Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageLead;
-    document.getElementById("heroText").innerHTML = "Others First";
+    document.getElementById("heroText").innerHTML = "Blood. Sweat. Tears. Smiles.";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "81";
@@ -233,7 +233,7 @@ $("#legacy-rpg").on("mouseover",function(){
     console.log("Tabletop RPG Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageRPG;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = '<a href="http://www.defineyourlegacy.com">Game Website</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "99.4%";
@@ -251,7 +251,7 @@ $("#legacy-charSheet").on("mouseover",function(){
     console.log("User Interface Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageCharSheet;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Where Feedback and Design Changes Meet";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "8";
@@ -269,7 +269,7 @@ $("#legacy-con").on("mouseover",function(){
     console.log("Showmanship Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageCon;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = "Colors Catch";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "35%";
@@ -306,7 +306,7 @@ $("#pers-guru").on("mouseover",function(){
     console.log("Guru Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageGuru;
-    document.getElementById("heroText").innerHTML = "Listen";
+    document.getElementById("heroText").innerHTML = "Values Beget Principles and Drive";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "1";
