@@ -60,7 +60,7 @@ a{
     display: grid;
     /*grid-template-rows:     8.33%       16.67%          66.67%      8.33%   ;*/
     /*grid-template-rows:     .25fr        2fr             8fr         .75fr     ;*/
-    grid-template-rows:     5vh         15vh            70vh        10vh    ;
+    grid-template-rows:     5vh         15vh            100vh        14vh    ;
     grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
 }
 
@@ -90,7 +90,7 @@ a{
     /*width: 100px;
     transform: translate(10%,0px);*/
     margin-right: 4vw;
-    margin-top: -4vh;
+    margin-top: -6vh;
 }
 /*.list-format:hover{
     text-shadow: 0px 4px 12px #0a8dca;
@@ -114,19 +114,19 @@ a{
     for js targeting*/
 }
 #nav1:hover{
-    text-shadow: 0px 4px 12px #2aca0a;
+    text-shadow: 0px 4px 12px #32e60e;
     transition: 0.2s;
 }
 #nav2:hover{
-    text-shadow: 0px 4px 12px #ca0a0a;
+    text-shadow: 0px 4px 12px #df0d0d;
     transition: 0.2s;
 }
 #nav3:hover{
-    text-shadow: 0px 4px 12px #0a37ca;
+    text-shadow: 0px 4px 12px #0b3bdb;
     transition: 0.2s;
 }
 #nav4:hover{
-    text-shadow: 0px 4px 12px #b7ca0a;
+    text-shadow: 0px 4px 12px #cde20a;
     transition: 0.2s;
 }
 
@@ -185,7 +185,6 @@ a{
 #bannerQuote{
     grid-area: bannerQuote;
     text-align: center;
-    /*padding-top: 2%;*/
 }
 
 #hQuote{
@@ -225,7 +224,8 @@ a{
 .bodyColumn{
     /*margin: 0px;*/
     margin: 1vw;
-    display: grid;
+    display: block; /*allows cards to sit on top of each other; grid = evenly fills space
+                    could technically affect Hero & Gutters, as well*/
 }
 
 #nullLeft{
@@ -270,6 +270,7 @@ a{
     /*height: 200px;*/
     height: 20vh;
     border-radius: 2%;
+    margin-bottom: 5vh;
 
     padding-left:2%;
     padding-right:2%;
@@ -299,19 +300,19 @@ a{
 .cardDetails{
     grid-area: cardDetails;
     /*margin-top: 10%;*/
+    height: 13.5vh;
     margin-top: 1vh;
     overflow: hidden;
 }
 .cardPic{
-    /*width: 80%;*/
     height: 18vh;
+    width: 120%;
     max-width: 15vw;
-    /*margin:2%;*/
-    margin:.05vh;
-    text-align: center;
-    grid-area: cardPic;
-
     border-radius: 4%;
+
+    margin:4%;
+    margin-left: 14%;
+    grid-area: cardPic;
 }
 
 
@@ -518,7 +519,7 @@ a{
     /*for js targeting*/
 }
 #pic-guru{
-    /*for js targeting*/
+    width: 90%;
 }
 #pers-hobbies{
     /*for js targeting*/

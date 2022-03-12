@@ -9,7 +9,7 @@ var tempRandCheck = tempRand; /**used to ensure the same quote doesn't appear tw
 var lastCard = "default";
 /** About */
 var heroImageLead = "images/Team Kuhns A.jpg";
-var heroImageChange = "images/WBoard Default.jpg";
+var heroImageChange = "images/GovLov Flow.JPG";
 var heroImageUser = "images/Validation.jpg";
 /** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
@@ -38,6 +38,17 @@ var statNumRightDefault = document.getElementById("statNumRight").innerHTML;
 var statTextRightDefault = document.getElementById("statTextRight").innerHTML;
 
 
+/* changes hover color and detailColumn height, depenidng on page*/
+$("#nav1").on("click",function(){
+    console.log("Nav to About Page!");
+    document.getElementByClass("card").style.boxShadow = "0px 4px 12px 2px rgba(36, 236, 18, 0.4)";
+    document.getElementById("bodyDisplay").style.gridTemplateRows = "5vh  15vh  70vh  14vh";
+}); /**doesn't currently work */
+$("#nav2").on("click",function(){
+    console.log("Nav to Work Page!");
+    document.getElementByClass("card").style.boxShadow = "0px 4px 12px 2px rgba(228, 21, 21, 0.4)";
+    document.getElementById("bodyDisplay").style.gridTemplateRows = "5vh  15vh  100vh  14vh";
+}); /**doesn't currently work */
 
 /**upon click, change the banner to a random quote */
 $("#bannerQuote").on("click",function changeQuote(){
@@ -214,7 +225,7 @@ $("#work-HGem").on("mouseover",function(){
     console.log("HGem Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageHGem;
-    document.getElementById("heroText").innerHTML = heroPicText;
+    document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/ihafJzG6YwQq3ys8xMNOKd/Hidden-Gem?node-id=64%3A503&scaling=scale-down&page-id=64%3A502&starting-point-node-id=64%3A503">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "3";
