@@ -9,7 +9,7 @@ var tempRandCheck = tempRand; /**used to ensure the same quote doesn't appear tw
 var lastCard = "default";
 /** About */
 var heroImageLead = "images/Team Kuhns A.jpg";
-var heroImageChange = "images/GovLov Flow.JPG";
+var heroImageChange = "images/GovLov Flow.jpg";
 var heroImageUser = "images/Validation.jpg";
 /** Work */
 var heroImageDASNW = "images/DASNW-slideOne.jpg";
