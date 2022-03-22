@@ -28,6 +28,9 @@ var heroImageHobbies = "images/Charleston Skyline.jpg";
 var heroPicText = "Click Above to Learn More";
 var heroLinkText = "Click Here for Demo"; /*not used: hrefs need to be cited in this string, and they vary*/
 var heroPicTextDefault = document.getElementById("heroText").innerHTML;
+
+var heroPicMarginLeftDefault = document.getElementById("heroPic").style.marginLeft;
+var heroPicMarginLeftMost = "9vw"; /*works for most heroPics; doesn't trump CSS MediaQuery */
 /**Defaults = as provided in HTML files */
 var heroImageDefault = document.getElementById("heroPic").src;
 var iconLeftDefault = document.getElementById("iconLeft").src;
@@ -116,6 +119,7 @@ $("#about-lead").on("mouseover",function(){
     console.log("Leadership Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageLead;
+    document.getElementById("heroPic").style.marginLeft = "8vw";
     document.getElementById("heroText").innerHTML = "Blood. Sweat. Tears. Smiles.";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -134,6 +138,7 @@ $("#about-change").on("mouseover",function(){
     console.log("Change Management Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageChange;
+    document.getElementById("heroPic").style.marginLeft = "7vw";
     document.getElementById("heroText").innerHTML = "Plan. Communicate. Execute. Sustain.";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -152,6 +157,7 @@ $("#about-user").on("mouseover",function(){
     console.log("User Centric Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageUser;
+    document.getElementById("heroPic").style.marginLeft = "7vw";
     document.getElementById("heroText").innerHTML = "You Didn't Hear It From Me";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -171,6 +177,7 @@ $("#work-DASNW").on("mouseover",function(){
     console.log("DASNW Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageDASNW;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/kF9evvR5l4Fjnj4Ul0q0Zp/DASNW-Revision?node-id=474%3A10485&scaling=scale-down&page-id=459%3A7816&starting-point-node-id=474%3A10485&show-proto-sidebar=1">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -189,6 +196,7 @@ $("#work-FridgeFA").on("mouseover",function(){
     console.log("FridgeFA Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageFridgeFA;
+    document.getElementById("heroPic").style.marginLeft = "9vw";
     document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/3cn0eXRCUJks7PqEx9rwEw/Fridge-For-All?node-id=165%3A19328&scaling=scale-down&page-id=165%3A19316&starting-point-node-id=165%3A19328">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -207,6 +215,7 @@ $("#work-SPlant").on("mouseover",function(){
     console.log("SPlant Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageSPlant;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/EcRZgXWv4wo6MLRMzluuK8/Group-7---Project-1---Mid-Fi-Prototype-Collab?node-id=400%3A23130&scaling=scale-down&page-id=400%3A22954&starting-point-node-id=400%3A23130&show-proto-sidebar=1">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -225,6 +234,7 @@ $("#work-HGem").on("mouseover",function(){
     console.log("HGem Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageHGem;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = '<a href="https://www.figma.com/proto/ihafJzG6YwQq3ys8xMNOKd/Hidden-Gem?node-id=64%3A503&scaling=scale-down&page-id=64%3A502&starting-point-node-id=64%3A503">Click Here for Demo</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -244,11 +254,12 @@ $("#legacy-rpg").on("mouseover",function(){
     console.log("Tabletop RPG Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageRPG;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = '<a href="http://www.defineyourlegacy.com">Game Website</a>';
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
-    document.getElementById("statNumLeft").innerHTML = "99.4%";
-    document.getElementById("statTextLeft").innerHTML = "Player Approval";
+    document.getElementById("statNumLeft").innerHTML = "170";
+    document.getElementById("statTextLeft").innerHTML = "Most Miles to an Event";
 
     document.getElementById("iconRight").src = "images/Pie Chart.svg";
     document.getElementById("statNumRight").innerHTML = "4";
@@ -262,6 +273,7 @@ $("#legacy-charSheet").on("mouseover",function(){
     console.log("User Interface Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageCharSheet;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = "Where Feedback and Design Changes Meet";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -280,6 +292,7 @@ $("#legacy-con").on("mouseover",function(){
     console.log("Showmanship Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageCon;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = "Colors Catch";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -299,6 +312,7 @@ $("#pers-games").on("mouseover",function(){
     console.log("Games Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageGames;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = "Solo Queue Fill";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -317,7 +331,10 @@ $("#pers-guru").on("mouseover",function(){
     console.log("Guru Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageGuru;
+    document.getElementById("heroPic").style.marginLeft = "13vw";
     document.getElementById("heroText").innerHTML = "Values Beget Principles and Drive";
+    /*figuring the below out would help a lot; for each different heroPic is manually set */
+    /*document.getElementById("heroPic").style.marginLeft = (viewport.width * 2) - (document.getElementById("heroPic").style.width * 4);*/
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
     document.getElementById("statNumLeft").innerHTML = "1";
@@ -335,6 +352,7 @@ $("#pers-hobbies").on("mouseover",function(){
     console.log("Hobbies Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageHobbies;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftMost;
     document.getElementById("heroText").innerHTML = "Born in Charleston, SC";
 
     document.getElementById("iconLeft").src = "images/Crosshair.svg";
@@ -354,6 +372,7 @@ $(".navigation").on("mouseover",function(){
     console.log("Nav Rolled Over!");
 
     document.getElementById("heroPic").src = heroImageDefault;
+    document.getElementById("heroPic").style.marginLeft = heroPicMarginLeftDefault;
     document.getElementById("heroText").innerHTML = heroPicTextDefault;
 
     document.getElementById("iconLeft").src = iconLeftDefault;

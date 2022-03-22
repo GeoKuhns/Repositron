@@ -335,7 +335,7 @@ a{
 
     grid-area: heroPic;
     position:initial;
-    margin-left: 9vw;
+    margin-left: 12vw;
     z-index: -1; /*somewhere along border creation, heroPic started trumping topNav*/
 }
 #heroPic:hover{
@@ -350,6 +350,7 @@ a{
     grid-area: heroText;
     /*z-index: 0;*//*puts it above the image*/
     margin-top: 1vh;
+    margin-left: default;
 }
 
 #heroStatLeft{
@@ -368,19 +369,20 @@ a{
     /*position: absolute; /*does stop popping...*/
 }
 #iconLeft{
-    /*for js targeting*/
+    margin-top: calc(88px - calc(14vw / 2 ));
 }
 #statNumLeft{
-    margin-top: 14vh;
+    margin-top: calc(150px - calc(14vw / 2 ));
 }
 #statTextLeft{
     margin-top: -4vh;
 }
 #iconRight{
-    /*for js targeting*/
+    margin-top: calc(88px - calc(14vw / 2 ));
 }
 #statNumRight{
-    margin-top: 14vh;
+    /*margin-top: 14vh;*/
+    margin-top: calc(150px - calc(14vw / 2 ));
 }
 #statTextRight{
     margin-top: -4vh;
@@ -410,7 +412,7 @@ a{
 
 .socialIcon{
     width: 42px;
-    margin: 2%;
+    margin: 20px;
     position: absolute;
     transform: translate(-180px,-10px);
     
@@ -531,10 +533,10 @@ a{
 /*card declarations^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /*Mobile*/
-@media all and (max-width: 500px){
+@media all and (max-width: 575px){
     
     #bodyDisplay{
-        grid-template-rows:     50px       100px            1000px      70px     ;
+        grid-template-rows:     50px       100px            1070px      60px     ;
         grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
     }
 
@@ -558,13 +560,6 @@ a{
         grid-template-rows:     10vh         75vh          12vh            100px             10vh        ;
         grid-template-areas:    "nullLeft"  "heroSpace"  "nullCenter"   "detailColumn"  "nullRight";
     }
-
-    #heroPic{
-        max-width: 60vw;
-        margin-left: 20vw;
-        /*position: sticky;
-        top: 10px;*/
-    }
     
     #heroSpace{
         /*grid-area: heroSpace;
@@ -575,6 +570,18 @@ a{
             "heroPic heroPic heroPic"
             "heroText heroText heroText"
             "heroStatLeft heroStatGap heroStatRight";
+    }
+
+    #heroPic{
+        max-width: 60vw;
+        margin-left: 90px;
+        /*position: sticky;
+        top: 10px;*/
+    }
+    
+    #heroText{
+        margin-left: 10vw;
+        margin-right: -5vw;
     }
 
     .card{
@@ -595,10 +602,44 @@ a{
         grid-area: cardPic;*/
     }
     
+    #iconLeft{
+        margin-top: 0px;
+        margin-left: 6vw;
+    }
+    #iconRight{
+        margin-top: 0px;
+        margin-left: 15vw;
+    }
     #statNumLeft{
         margin-top: 60px;
+        margin-left: 12vw;
     }
     #statNumRight{
         margin-top: 60px;
+        margin-left: 26vw;
+    }
+    #statTextLeft{
+        width: 200px;
+        margin-left: 2vw;
+    }
+    #statTextRight{
+        width: 200px;
+        margin-left: 12vw;
+    }
+}
+
+/*Desktop*/
+@media all and (min-width: 1500px){
+    #iconLeft{
+        margin-top: calc(118px - calc(14vw / 2 ));
+    }
+    #iconRight{
+        margin-top: calc(118px - calc(14vw / 2 ));
+    }
+    #statNumLeft{
+        margin-top: calc(180px - calc(14vw / 2 ));
+    }
+    #statNumRight{
+        margin-top: calc(180px - calc(14vw / 2 ));
     }
 }
