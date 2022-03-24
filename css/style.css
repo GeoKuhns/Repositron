@@ -60,14 +60,14 @@ a{
     display: grid;
     /*grid-template-rows:     8.33%       16.67%          66.67%      8.33%   ;*/
     /*grid-template-rows:     .25fr        2fr             8fr         .75fr     ;*/
-    grid-template-rows:     5vh         15vh            100vh        14vh    ;
+    grid-template-rows:     5vh         18vh            100vh        14vh    ;
     grid-template-areas:    "topNav"    "bannerQuote"   "bodyMain"  "botNav";
 }
 
 #topNav{
     width:100%;
     /*height: 60px;*/
-    height: 8vh;
+    height: 50px;
     position:fixed;
     z-index: 10;
 
@@ -90,7 +90,7 @@ a{
     /*width: 100px;
     transform: translate(10%,0px);*/
     margin-right: 4vw;
-    margin-top: -6vh;
+    margin-top: -25px;
 }
 /*.list-format:hover{
     text-shadow: 0px 4px 12px #0a8dca;
@@ -138,7 +138,7 @@ a{
 /*topNav grid area declarations*/
 #logo{
     /*width:20%;*/
-    height: 8vh;
+    height: 50px;
     margin:2%;
     margin-top: 3.5%;
     margin-right: 10%;
@@ -179,7 +179,7 @@ a{
     grid-area: navButton;
     align-items: flex-end;
     padding: 1px;
-    margin-left: 10vw; /*calc(10% + 10vw);*/
+    margin-left: 150%; /*calc(10% + 10vw);*/
 }
 /*topNav grid area declarations^^^^^^^^^^^^^*/
 
@@ -187,11 +187,13 @@ a{
 #bannerQuote{
     grid-area: bannerQuote;
     text-align: center;
+
+    cursor:pointer;
 }
 
 #hQuote{
     /*padding-bottom: 0px auto;*/
-    cursor:pointer;
+    margin-top: 30px;
 }
 #hQuote:hover{
     text-shadow: 0px 4px 12px #0a8dca;
@@ -641,6 +643,7 @@ a{
     #navButton{
         margin-left: 20vw; /*calc(10% + 10vw);*/
     }
+
     #iconLeft{
         margin-top: calc(118px - calc(14vw / 2 ));
     }
