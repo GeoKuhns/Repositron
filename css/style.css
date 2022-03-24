@@ -74,7 +74,7 @@ a{
     grid-area: topNav;
     display: grid;
     /*grid-template-columns:1fr     4fr     3fr             5fr;*/
-    grid-template-columns:  20vw    20vw    24vw            15vw;
+    grid-template-columns:  20vw    20vw    1vw            15vw; /*nullCenter was 24vw*/
     grid-template-areas:    "logo   name    nullCenterTop   navButton";
 }
 
@@ -177,7 +177,9 @@ a{
 }
 #navButton{
     grid-area: navButton;
+    align-items: flex-end;
     padding: 1px;
+    margin-left: 10vw; /*calc(10% + 10vw);*/
 }
 /*topNav grid area declarations^^^^^^^^^^^^^*/
 
@@ -313,6 +315,7 @@ a{
     margin:4%;
     margin-left: 14%;
     grid-area: cardPic;
+    object-fit: cover; /*rwd crop*/ /*for portraits: HTML overrides*/
 }
 
 
@@ -336,6 +339,7 @@ a{
     grid-area: heroPic;
     position:initial;
     margin-left: 12vw;
+    object-fit: cover; /*rwd crop*/
     z-index: -1; /*somewhere along border creation, heroPic started trumping topNav*/
 }
 #heroPic:hover{
@@ -375,7 +379,7 @@ a{
     margin-top: calc(150px - calc(14vw / 2 ));
 }
 #statTextLeft{
-    margin-top: -4vh;
+    margin-top: -12px; /*more px, less vh for tall screens*/
 }
 #iconRight{
     margin-top: calc(88px - calc(14vw / 2 ));
@@ -385,7 +389,7 @@ a{
     margin-top: calc(150px - calc(14vw / 2 ));
 }
 #statTextRight{
-    margin-top: -4vh;
+    margin-top: -12px;
 }
 
 .statIcon{
@@ -547,6 +551,9 @@ a{
         grid-template-columns:  1fr         1fr         3fr        ;
         grid-template-areas:    "logo       name        navButton  ";
     }
+    #navButton{
+        margin-left: 0px; /*calc(10% + 10vw);*/
+    }
     
     #bodyMain{
         /*width:100%;
@@ -630,6 +637,10 @@ a{
 
 /*Desktop*/
 @media all and (min-width: 1500px){
+    
+    #navButton{
+        margin-left: 20vw; /*calc(10% + 10vw);*/
+    }
     #iconLeft{
         margin-top: calc(118px - calc(14vw / 2 ));
     }
