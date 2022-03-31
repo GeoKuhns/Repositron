@@ -158,8 +158,8 @@ a{
     transition-delay: 0.1s;
 }
 #logo:hover{
-    /*width: 89%;*/
     height: 20vh;
+    
     /*transform: translate(-48px,-20px);*/
 
 }
@@ -612,20 +612,20 @@ a{
     }
     
     #iconLeft{
-        margin-top: 0px;
+        margin-top: 20px;
         margin-left: 6vw;
     }
     #iconRight{
-        margin-top: 0px;
+        margin-top: 20px;
         margin-left: 15vw;
     }
     #statNumLeft{
-        margin-top: 60px;
+        margin-top: 80px;
         margin-left: 12vw;
     }
     #statNumRight{
-        margin-top: 60px;
-        margin-left: 26vw;
+        margin-top: 80px;
+        margin-left: 25vw;
     }
     #statTextLeft{
         width: 200px;
@@ -633,12 +633,20 @@ a{
     }
     #statTextRight{
         width: 200px;
-        margin-left: 12vw;
+        margin-left: 10vw;
     }
 }
 
 /*Desktop*/
 @media all and (min-width: 1500px){
+
+    p{
+        font-size: 16px;
+    }
+
+    .cardPic{
+        width: 200%;
+    }
     
     #navButton{
         margin-left: 20vw; /*calc(10% + 10vw);*/
